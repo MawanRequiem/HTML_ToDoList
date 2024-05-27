@@ -1,6 +1,6 @@
 body{
     background-color:rgba(25, 163, 255, 0.719);
-    font-family: 'Montserrat';
+    font-family: 'Montserrat';   
 }
 
 .todo-wrap{
@@ -8,13 +8,68 @@ body{
     background-color: aliceblue;
     border-radius: 15px;
     padding: 15px;
-    margin-bottom: auto;
+    padding-bottom: 50px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
+.control-wrap{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.center .control-wrap{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
 .todo-wrap h1{
     margin: 0px;
     font-weight: bold;
+}
+
+.todo-wrap p {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.todo-wrap ol{
+    margin: 20px 0;
+}
+
+.todo-wrap ol li {
+    margin: 5px 0;
+    padding: 5px;
+    transition: all 0,5s ease-in-out;
+}
+
+.todo-wrap form{
+    display: inline-block;
+}
+
+.todo-wrap input {
+    padding: 3px 5px;
+}
+
+.todo-wrap .buton:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.todo-wrap .buton{
+    margin: 10px 2px;
+    color: white;
+    background-color: blue;
+    border-radius: 15px;
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
 }
