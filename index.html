@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My To Do list</title>
     <link rel="stylesheet" href="styling.css">
-    <script src="script.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
@@ -16,20 +16,21 @@
             <p style="color: rgb(203, 207, 207);"><em>Klik 2 kali untuk save</em></p>
             <br>
             <form>
-                <input type="text" id="form-box" name="form">
+                <input type="text" id="form-box">
                 <button id="submit-button" class="buton">submit</button>
             </form>
         </center>
-        <ol>
-            <li id="list-todo"></li>
+        <ol id="list-todo">
         </ol>
         <div id="control-wrap" class="center"> 
             <center>
-            <button id="clear-completed-button" >Clear Completed</button>
-            <button id="empty-button">Empty List</button>
-            <button id="save-list">Save List</button>
+            <button id="clear-completed-button" onclick="clearCompletedToDoItems()" >Clear Completed</button>
+            <button id="empty-button" onclick="emptyList()">Empty List</button>
+            <button id="save-list" onclick="saveList()">Save List</button>
             </center>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

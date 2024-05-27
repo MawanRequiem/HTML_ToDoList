@@ -73,3 +73,18 @@ body{
     display: inline-block;
     font-size: small;
 }
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#list-todo li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#list-todo li:hover {
+    background-color: #4400ff;
+}
